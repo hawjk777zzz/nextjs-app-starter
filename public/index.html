@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Contas Valorant - Premium & Profissional</title>
+    <meta name="description" content="Loja profissional de contas Valorant com design futurista. Contas premium, ranks altos e skins exclusivas.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">🎮</div>
+            <div class="loading-text">VALORANT STORE</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Hero -->
+    <header class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-title-main">LOJA DE CONTAS</span>
+                <span class="hero-title-sub">VALORANT</span>
+            </h1>
+            <p class="hero-subtitle">Contas Premium • Design Futurista • Performance Garantida</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Contas Vendidas</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Suporte</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Seguro</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Explore as contas</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Filters Section -->
+        <section class="filters-section">
+            <div class="container">
+                <h2 class="section-title">Filtrar Contas</h2>
+                <div class="filters-container">
+                    <div class="filter-group">
+                        <label for="rank-filter">Rank:</label>
+                        <select id="rank-filter" class="filter-select">
+                            <option value="">Todos os Ranks</option>
+                            <option value="Silver">Silver</option>
+                            <option value="Gold">Gold</option>
+                            <option value="Platinum">Platinum</option>
+                            <option value="Diamond">Diamond</option>
+                            <option value="Ascendant">Ascendant</option>
+                            <option value="Immortal">Immortal</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="price-filter">Preço máximo:</label>
+                        <input type="range" id="price-filter" class="filter-range" min="0" max="600" value="600">
+                        <span id="price-display">R$ 600</span>
+                    </div>
+                    <button id="clear-filters" class="btn-secondary">Limpar Filtros</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="products-section">
+            <div class="container">
+                <div class="content-layout">
+                    <!-- Products List -->
+                    <div class="products-container">
+                        <h2 class="section-title">Contas Disponíveis</h2>
+                        <div id="products-grid" class="products-grid">
+                            <!-- Products will be loaded here by JavaScript -->
+                        </div>
+                        <div id="no-products" class="no-products" style="display: none;">
+                            <div class="no-products-icon">🔍</div>
+                            <h3>Nenhuma conta encontrada</h3>
+                            <p>Tente ajustar os filtros para encontrar contas disponíveis.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product Details -->
+                    <div class="details-container">
+                        <h2 class="section-title">Detalhes da Conta</h2>
+                        <div id="product-details" class="product-details">
+                            <div class="details-placeholder">
+                                <div class="placeholder-icon">👆</div>
+                                <h3>Selecione uma conta</h3>
+                                <p>Clique em uma conta ao lado para ver todos os detalhes, agentes, skins e informações completas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-title">Por que escolher nossa loja?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>100% Seguro</h3>
+                        <p>Todas as contas são verificadas e garantidas. Suporte completo pós-venda.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Entrega Instantânea</h3>
+                        <p>Receba os dados da sua conta imediatamente após a confirmação do pagamento.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Ranks Altos</h3>
+                        <p>Contas com ranks elevados e estatísticas impressionantes para você dominar.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💎</div>
+                        <h3>Skins Premium</h3>
+                        <p>Coleções exclusivas de skins, incluindo as mais raras e desejadas do jogo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Loja Valorant</h3>
+                    <p>A melhor loja de contas Valorant do Brasil. Qualidade, segurança e confiança garantidas.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>📧 contato@lojavalorant.com</p>
+                    <p>💬 Discord: LojaValorant#1234</p>
+                    <p>📱 WhatsApp: (11) 99999-9999</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Informações</h4>
+                    <p>🔒 Pagamento Seguro</p>
+                    <p>🚀 Entrega Imediata</p>
+                    <p>🛡️ Garantia Total</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Loja Valorant. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
